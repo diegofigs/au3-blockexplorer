@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <h1>Block Number: {blockNumber}</h1>
       <h2>Timestamp: {new Date(timestamp * 1_000).toLocaleString()}</h2>
-      <h3>Transactions: {transactions.length}</h3>
+      <h3>Transactions: {transactions && transactions.length}</h3>
       <hr />
       <Transactions transactions={transactions} />
     </div>
